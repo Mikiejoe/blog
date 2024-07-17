@@ -1,5 +1,6 @@
 import React from 'react'
-import { MdFacebook,MdTwitter } from 'react-icons/md'
+import { BsTwitterX } from 'react-icons/bs'
+import { MdFacebook,} from 'react-icons/md'
 
 function Footer() {
   return (
@@ -11,7 +12,7 @@ function Footer() {
         <div>
             <div>
                 <MdFacebook/>
-                <MdTwitter/>
+                <BsTwitterX/>
             </div>
         </div>
     </div>

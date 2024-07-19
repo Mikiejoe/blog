@@ -21,19 +21,16 @@ function About() {
             laboriosam, ullam laudantium repellat ipsum ipsa voluptatum.
           </p>
           <LazyLoadImage
-            className="bg-red-600 h-[250px] w-[2600px] "
+            className="bg-gray-400 h-[250px] w-[2600px]  hidden md:block "
             alt="altanate"
             effect="blur"
             height="240px"
             placeholder={<div className='h-[240px] bg-gray-400'></div>}
             wrapperProps={{
-              // If you need to, you can tweak the effect transition using the wrapper style.
-              style: { transitionDelay: "3s" },
+              style: { transitionDelay: "1s" },
             }}
             src="https://media.istockphoto.com/id/472324721/vector/rally-demonstration.jpg?s=1024x1024&w=is&k=20&c=ZEhCQQSiV_v5WvWJsTztpXmwxPAWud4CJCtpETdxq70="
           />
-
-          {/* <img src="https://media.istockphoto.com/id/472324721/vector/rally-demonstration.jpg?s=1024x1024&w=is&k=20&c=ZEhCQQSiV_v5WvWJsTztpXmwxPAWud4CJCtpETdxq70=" alt="" className='h-[240px] hidden md:block bg-gray-400' /> */}
         </div>
         <Link to="/about">
           <button className="bg-primary border-primaryText border rounded-md text-primaryText/50 p-2 mt-4">

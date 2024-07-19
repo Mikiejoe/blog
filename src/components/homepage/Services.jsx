@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const services = [
   {
@@ -38,11 +40,25 @@ function Services() {
         <div className="md:grid grid-cols-3 gap-4 space-y-4 md:space-y-0">
           {services.map((service, index) => (
             <div key={index} className="bg-primaryText/5 rounded-md overflow-hidden">
-              <img
+              <LazyLoadImage
+            className="w-[100%] "
+            alt="altanate"
+            effect="blur"
+            height="240px"
+            placeholder={<div className='h-[240px] bg-gray-400'></div>}
+            wrapperProps={{
+              // If you need to, you can tweak the effect transition using the wrapper style.
+              style: { transitionDelay: "1s" },
+            }}
+            src={service.image}
+            lt={service.name}
+                // className="w-[100%]"
+          />
+              {/* <img
                 src={service.image}
                 alt={service.name}
                 className="w-[100%]"
-              />
+              /> */}
               <div className="p-4">
                 <h1 className="uppercase text-primaryText/70 text-md font-bold">
                   {service.name}

@@ -15,10 +15,10 @@ function ContactPage() {
       <NavBar />
       <div className="">
         <Hero />
-        <div className="md:px-32 px- py-8 space-y-8 bg-gray-50">
-          <div className="flex">
+        <div className="md:px-32 px-8 py-8 space-y-8 space-x-12 gap-4 bg-gray-50">
+          <div className="md:flex space-y-8 gap-4">
             <div className="flex-1">
-              <h1 className="text-[32px]">You Can Find Us At</h1>
+              <h1 className="text-[28px] md:text-[32px]">You Can Find Us At</h1>
               <div className="space-y-4">
                 <div>
                   <p className="text-secondaryText uppercase">Email</p>
@@ -45,10 +45,11 @@ function ContactPage() {
                 </div>
               </div>
             </div>
+            
             <div className="flex-1">
-              <h1 className="text-[32px]">Let's Get in Touch</h1>
+              <h1 className="text-[28px] md:text-[32px] ">Let's Get in Touch</h1>
 
-              <form action="" className="p-4 w-[60%] space-y-4">
+              <form action="" className="p-4 md:w-[60%] space-y-4">
                 <div className="h-9">
                   <input
                     type="text"

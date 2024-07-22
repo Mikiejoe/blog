@@ -66,14 +66,14 @@ function NavBar() {
           isOpen ? "left-[0]" : "left-[-100%]"
         } w-[100%] transition-all  items-center fle justify-center`}
       >
-        <div className="space-y-4 p-4">
+        <div className="space-y-4 p-4 pr-[40%]">
           {Links.map((link, index) => (
             <Link
               onClick={openNavBar}
               key={index}
-              className={`border-b-[2px]  px-1 py-1 ${
+              className={`border-b-[2px] w-full  px-1 py-1 ${
                 CurrentRoute(link.route) ? "text-primary" : "border-secondary"
-              } rounded-md w-[40%] transition-colors flex`}
+              } transition-colors flex`}
               to={link.route}
             >
               <li

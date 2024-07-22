@@ -54,15 +54,15 @@ function Footer() {
         <p className="text-center bg-secondary p-2 text-primaryText">
           &copy;{year()} Laban's Desk
         </p>
-        <div className="flex justify-between p-4">
-          <div className="text-primaryText/50 ">
+        <div className="flex md:justify-center p-4">
+          <div className="text-primaryText/50 md:flex gap-4">
             {Links.map((link, index) => (
               <Link
                 key={index}
                 className="px-1 py-1 hover:border-primary transition-colors flex"
                 to={link.route}
               >
-                <p className="text-links">{link.name}</p>
+                <p className="text-primaryText/80">{link.name}</p>
               </Link>
             ))}
           </div>

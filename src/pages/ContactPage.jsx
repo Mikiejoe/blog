@@ -32,7 +32,7 @@ function ContactPage() {
                   <p className="text-secondaryText uppercase">Location</p>
                   <p className="text-primaryText/90">1360 Kiratina,Nakuru</p>
                 </div>
-                <div className="flex justify-center gap-4">
+                <div className="flex gap-4">
                   <Link className="p-1 border rounded-full" to="#">
                     <MdFacebook color="#316FF6" size={24} />
                   </Link>

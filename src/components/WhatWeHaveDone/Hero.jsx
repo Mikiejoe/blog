@@ -5,8 +5,7 @@ function Hero() {
     <div>
       <div className='bg-secondaryText text-white flex items-center justify-center h-[50vh]'>
         <div className='text-center'>
-          <h1 className='text-4xl font-bold'>Welcome to Laban's Desk</h1>
-          <p className='text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h1 className='text-4xl font-bold'>What We Have Done</h1>
         </div>
       </div>
     </div>

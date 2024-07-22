@@ -27,7 +27,7 @@ function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const openNavBar = () => {
     setIsOpen(!isOpen);
-    console.log("navbar open", isOpen);
+    // console.log("navbar open", isOpen);
   };
   const CurrentRoute = (current) => {
     const location = useLocation();
@@ -37,14 +37,14 @@ function NavBar() {
   // console.log(CurrentRoute());
   return (
     <>
-      <div className="bg-primaryText flex p-4 md:px-16 justify-between items-center text-primary">
-        <Link to="/">Title</Link>
+      <div className="bg-secondary flex p-4 md:px-16 justify-between items-center text-primaryText">
+        <Link to="/"> <img src="/logo.png" className="h-12" alt="" /> </Link>
         <ul className="gap-4 hidden md:flex">
           {Links.map((link, index) => (
             <Link
               key={index}
-              className={` border-b-[2px] border-primaryText px-1 py-1 hover:border-primary transition-colors ${
-                CurrentRoute(link.route) ? "border-primary" : ""
+              className={`hover:border-primary  font-semibold border-b-2 px-1 py-1 ${
+                CurrentRoute(link.route) ? "text-primary border-primary" : "border-secondary"
               }`}
               to={link.route}
             >
@@ -62,7 +62,7 @@ function NavBar() {
         </div>
       </div>
       <div
-        className={`bg-primaryText  text-primary absolute ${
+        className={`bg-primary  text-primaryText absolute ${
           isOpen ? "left-[0]" : "left-[-100%]"
         } w-[100%] transition-all  items-center fle justify-center`}
       >
@@ -72,13 +72,13 @@ function NavBar() {
               onClick={openNavBar}
               key={index}
               className={`border-b-[2px] border-primaryText px-1 py-1 ${
-                CurrentRoute(link.route) ? "text-primary" : ""
+                CurrentRoute(link.route) ? "text-primaryText" : ""
               } hover:bg-gray-700 rounded-md w-[40%] transition-colors flex`}
               to={link.route}
             >
               <li
                 className={`list-none text-links ${
-                  CurrentRoute(link.route) ? "text-primary" : ""
+                  CurrentRoute(link.route) ? "text-primaryText" : ""
                 }`}
               >
                 {link.name}

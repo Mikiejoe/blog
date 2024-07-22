@@ -23,13 +23,14 @@ const Links = [
 ];
 
 function Footer() {
+  const year = () => {
+    return new Date().getFullYear();
+  }
   return (
-    <div className="bg-primaryText/80 ">
-      <div className="p-4 text-center">
-        <h1 className="text-center text-[28px] font-semi-bold text-primary">
-          Blog Name
-        </h1>
-        <p className="text-primary/70">
+    <div className="bg-primary/30 ">
+      <div className="p-4 flex flex-col items-center text-center">
+        <img src="/logo.png" className="h-12" alt="" />
+        <p className="text-primaryText/70  md:w-[60%]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab officia
           eveniet reprehenderit laborum quisquam, amet odit voluptas atque ipsa
           molestiae, voluptatum eaque iure provident veritatis, cupiditate in
@@ -50,11 +51,11 @@ function Footer() {
       </div>
 
       <div className="flex flex-col-reverse">
-        <p className="text-center bg-primaryText p-2 text-primary">
-          &copy;2024 BlogName
+        <p className="text-center bg-secondary p-2 text-primaryText">
+          &copy;{year()} Laban's Desk
         </p>
         <div className="flex justify-between p-4">
-          <div className="text-primary/50 ">
+          <div className="text-primaryText/50 ">
             {Links.map((link, index) => (
               <Link
                 key={index}
@@ -65,12 +66,7 @@ function Footer() {
               </Link>
             ))}
           </div>
-          {/* <div>
-          <div className="flex rounded-md overflow-hidden">
-          <input type="text" />
-          <button className="bg-[#CD201F] p-2">Send</button>
-          </div>
-        </div> */}
+          
         </div>
       </div>
     </div>

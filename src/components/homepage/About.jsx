@@ -7,11 +7,11 @@ function About() {
   return (
     <>
       <div className="space-y-4">
-        <h1 className="uppercase text-primaryText/70 text-lg font-bold">
+        <h1 className="uppercase text-primaryTextText/70 text-lg font-bold">
           About Us
         </h1>
         <div className="md:flex space-y-2 items-center gap-52">
-          <p className="text-primaryText/60">
+          <p className="text-secondaryText line-clamp-5">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
             perspiciatis dolorum molestiae aperiam temporibus ut corrupti
             doloremque beatae. Quae, impedit. At commodi distinctio temporibus
@@ -33,7 +33,7 @@ function About() {
           />
         </div>
         <Link to="/about">
-          <button className="bg-primary border-primaryText border rounded-md text-primaryText/50 p-2 mt-4">
+          <button className="bg-secondary border rounded-md text-primaryTextText/50 p-2 mt-4">
             Learn More
           </button>
         </Link>

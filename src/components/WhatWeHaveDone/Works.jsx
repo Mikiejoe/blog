@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
@@ -30,12 +29,12 @@ const services = [
   },
 ];
 
-function Services() {
+function Works() {
   return (
     <>
       <div className="space-y-4">
         <h1 className="uppercase text-primaryTextText/70 text-lg font-bold">
-          What we do
+          What We Have Done
         </h1>
         <div className="md:grid grid-cols-3 gap-4 space-y-4 md:space-y-0">
           {services.map((service, index) => (
@@ -63,14 +62,10 @@ function Services() {
             </div>
           ))}
         </div>
-        <Link to="what-we-do">
-          <button className="bg-secondary  border rounded-md py-2 px-7 mt-4 text-primaryTextText/50">
-            More
-          </button>
-        </Link>
+        
       </div>
     </>
   );
 }
 
-export default Services;
+export default Works;

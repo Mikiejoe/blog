@@ -62,7 +62,7 @@ function NavBar() {
         </div>
       </div>
       <div
-        className={`bg-primary  text-primaryText absolute ${
+        className={`bg-secondary text-primaryText absolute ${
           isOpen ? "left-[0]" : "left-[-100%]"
         } w-[100%] transition-all  items-center fle justify-center`}
       >
@@ -71,9 +71,9 @@ function NavBar() {
             <Link
               onClick={openNavBar}
               key={index}
-              className={`border-b-[2px] border-primaryText px-1 py-1 ${
-                CurrentRoute(link.route) ? "text-primaryText" : ""
-              } hover:bg-gray-700 rounded-md w-[40%] transition-colors flex`}
+              className={`border-b-[2px]  px-1 py-1 ${
+                CurrentRoute(link.route) ? "text-primary" : "border-secondary"
+              } rounded-md w-[40%] transition-colors flex`}
               to={link.route}
             >
               <li

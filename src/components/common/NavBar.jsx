@@ -55,9 +55,9 @@ function NavBar() {
 
         <div className="md:hidden">
           {isOpen ? (
-            <HiMenuAlt2 onClick={openNavBar} />
+            <HiMenuAlt2 size="32px" onClick={openNavBar} />
           ) : (
-            <HiMenuAlt3 onClick={openNavBar} />
+            <HiMenuAlt3 size="32px" onClick={openNavBar} />
           )}
         </div>
       </div>

@@ -3,7 +3,7 @@ import NavBar from '../components/common/NavBar'
 import Footer from '../components/common/Footer'
 import useDocumentTitle from '../hooks/useDocumentTitle'
 import Hero from '../components/WhatWeDo/Hero'
-import Services from '../components/homepage/Services'
+import Services from '../components/WhatWeDo/Services'
 
 function WhatWeDoPage() {
   useDocumentTitle('Laban\'s Desk - What We Do')

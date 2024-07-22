@@ -3,7 +3,7 @@ import NavBar from '../components/common/NavBar'
 import Footer from '../components/common/Footer'
 import useDocumentTitle from '../hooks/useDocumentTitle'
 import Hero from '../components/WhatWeHaveDone/Hero'
-import Works from '../components/homepage/Works'
+import Works from '../components/WhatWeHaveDone/Works'
 
 function WhatWeHaveDone() {
   useDocumentTitle('Laban\'s Desk - What We Have Done')
